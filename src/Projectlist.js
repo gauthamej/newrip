@@ -50,7 +50,7 @@ class Projectlist extends React.Component{
                 })
           }
       }
-      xhttp.open("GET","wss://localhost:4000/get",true);
+      xhttp.open("GET","http://localhost:4000/get",true);
     xhttp.setRequestHeader("Content-Type","application/json;charset=UTF8");
     xhttp.send();
     }
@@ -67,7 +67,7 @@ class Projectlist extends React.Component{
                      alert("deleted")
                 }
             }
-            xhttp.open("DELETE", "wss://localhost:4000/delete", true);
+            xhttp.open("DELETE", "http://localhost:4000/delete", true);
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
             xhttp.send(JSON.stringify(data));
         }
@@ -102,7 +102,7 @@ class Projectlist extends React.Component{
                           
                     }
                 }
-                xhttp.open("PUT", "wss://localhost:4000/edit", true);
+                xhttp.open("PUT", "http://localhost:4000/edit", true);
                 xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
                 xhttp.send(JSON.stringify(data));
             }
