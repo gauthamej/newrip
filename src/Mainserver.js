@@ -128,5 +128,5 @@ var sql=  "UPDATE free SET name='"+edname+"', projectname='"+edprojectname+"', n
       
 
        
-
-       app.listen(process.env.PORT || 4000,()=>console.log("listening port 4000"));
+	port=process.env.PORT || 4000
+       app.listen(port,()=>console.log("listening port 4000"));
