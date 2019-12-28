@@ -23,7 +23,7 @@ class Timetracking extends React.Component{
                          else{console.log("error1");
                           }
                             }
-                xhttp.open("POST","wss://localhost:4000/spent",true);
+                xhttp.open("POST","http://localhost:4000/spent",true);
                  xhttp.setRequestHeader("Content-Type","application/json;charset=UTF8");
                   xhttp.send(JSON.stringify(spentdata));
         }
